@@ -2,14 +2,14 @@
   "kind": "collectionType",
   "collectionName": "homes",
   "info": {
-    "name": "Part_1"
+    "name": "Homes"
   },
   "options": {
     "increments": true,
     "timestamps": true
   },
   "attributes": {
-    "header_text": {
+    "header": {
       "type": "string"
     },
     "description": {

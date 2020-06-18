@@ -3,7 +3,7 @@
     {
       "method": "GET",
       "path": "/homes",
-      "handler": "home.find",
+      "handler": "homes.find",
       "config": {
         "policies": []
       }
@@ -11,7 +11,7 @@
     {
       "method": "GET",
       "path": "/homes/count",
-      "handler": "home.count",
+      "handler": "homes.count",
       "config": {
         "policies": []
       }
@@ -19,7 +19,7 @@
     {
       "method": "GET",
       "path": "/homes/:id",
-      "handler": "home.findOne",
+      "handler": "homes.findOne",
       "config": {
         "policies": []
       }
@@ -27,7 +27,7 @@
     {
       "method": "POST",
       "path": "/homes",
-      "handler": "home.create",
+      "handler": "homes.create",
       "config": {
         "policies": []
       }
@@ -35,7 +35,7 @@
     {
       "method": "PUT",
       "path": "/homes/:id",
-      "handler": "home.update",
+      "handler": "homes.update",
       "config": {
         "policies": []
       }
@@ -43,7 +43,7 @@
     {
       "method": "DELETE",
       "path": "/homes/:id",
-      "handler": "home.delete",
+      "handler": "homes.delete",
       "config": {
         "policies": []
       }
