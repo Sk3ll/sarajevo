@@ -1,0 +1,69 @@
+// USER VARIABLES SECTION
+
+$accent: white; // Accent Color
+$fontsize: 10.89pt; // Body Font Size
+$textcolor: #282528; // Text Color
+$system: -apple-system, BlinkMacSystemFont, Arial, sans-serif; // System Font Family
+$lato: Lato, sans-serif; // Lato Font Family
+
+// Bootstrap compatible gutter variable => $gutter
+$grid-gutter-width: 20px;
+$gutter: $grid-gutter-width;
+
+// IMPORT SECTION
+
+@import 'node_modules/bootstrap/scss/bootstrap-reboot.scss'; // Bootstrap Reboot collection
+@import 'node_modules/bootstrap/scss/mixins/_breakpoints.scss'; // Bootstrap Breakpoints mixin
+@import 'node_modules/bootstrap/scss/bootstrap-grid.scss'; // Optional Bootstrap Grid
+@import 'node_modules/bootstrap/scss/utilities/_sizing.scss'; // Optional Bootstrap Utilites
+
+@import 'node_modules/slick-carousel/slick/slick-theme.scss';
+@import 'node_modules/slick-carousel/slick/slick.scss';
+
+
+// FONTS LOAD SECTION
+
+@mixin font($fname, $fstyle, $fweight, $furl) {
+	@font-face {
+		font-family: $fname;
+		font-style: $fstyle;
+		font-weight: $fweight;
+		// font-display: swap; // Uncomment to initially display system fonts
+		src: local($fname), url($furl) format('woff2');
+	}
+}
+
+@include font('Lato', normal, 100, '../fonts/Lato-Thin.woff2');
+@include font('Lato', italic, 100, '../fonts/Lato-ThinItalic.woff2');
+@include font('Lato', normal, 900, '../fonts/Lato-Black.woff2');
+
+@include font('Opensans', normal, 400, '../fonts/opensans.woff2');
+@include font('Opensans', normal , 600, '../fonts/opensanssemibold.woff2');
+@include font('Opensans', normal , 700, '../fonts/opensansbold.woff2');
+
+// GENERAL DOCUMENT STYLES
+
+::placeholder {
+	color: #666;
+}
+
+::selection {
+	background-color: $accent;
+	color: #fff;
+}
+
+input, textarea {
+	outline: none;
+	&:focus:required:invalid { border-color: red }
+	&:required:valid { border-color: green }
+}
+
+body {
+	font-family: $lato;
+	font-size: $fontsize;
+	min-width: 320px;
+	position: relative;
+	line-height: 1.65;
+	overflow-x: hidden;
+	color: $textcolor;
+}
