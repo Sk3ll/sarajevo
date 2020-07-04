@@ -236,26 +236,17 @@
     font-size: 14pt;
     font-weight: 600;
     margin: 0 10px;
+    padding: 0 20px;
   }
   button:hover {
     background: #4c76ff;
     color: white;
     border-radius: 5px;
-    padding: 0 20px;
+
   }
 }
 
-@media (max-width: 375px) {
-  .footer_subscribe {
-    input{
-      width: 200%;
-    }
-    a {
-      left: 89%;
-      top: 31%;
-    }
-  }
-}
+
 
 .image-block {
   padding: 0;
@@ -313,8 +304,8 @@
 
 
 .hover {
-  background: url(../images/dest/bg-hover.webp) ;
-
+  //background: url(../images/dest/bg-hover.webp) ;
+  background: rgba(76, 118, 225, 0.8);
   background-size: auto;
   text-align: center;
   position: absolute;
@@ -504,6 +495,10 @@
 }
 
 .footer_subscribe {
+  label {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+  }
 
   input{
     text-align:right;
@@ -513,7 +508,9 @@
     position: relative;
     overflow: hidden;
     border-radius: 5px;
-    width: 130%;
+    //width: 130%;
+
+    grid-area: 1 / 1 / 2 / 7;
   }
 
   input:focus{
@@ -522,7 +519,8 @@
   a {
     position: absolute;
     color: white;
-    left: 52%;
+    grid-area: 1 / 6 / 2 / 7;
+    left: 92%;
     top: 27%;
     i:hover {
       transform: scale(1.35);
@@ -543,3 +541,75 @@
 }
 
 @import 'media';
+
+@media (max-width: 480px) {
+  .works_buttons {
+    display: block;
+    text-align: center;
+  }
+  .footer_subscribe {
+    input {
+      //width: 250%;
+    }
+  }
+  .facts {
+    padding: 0 50px;
+  }
+  .row {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .phone, .team {
+    padding: 0 10px;
+  }
+  .hover {
+    padding: 147px;
+  }
+}
+
+@media (max-width: 375px) {
+  .header_shape:before {
+    left: 220px;
+  }
+  .header_shape:after {
+    left: -50px;
+  }
+  .features_wrap-block {
+    i {
+      margin: 0 15px 118px 0;
+    }
+  }
+  .hover {
+    padding: 87px;
+  }
+  .footer_subscribe {
+    input{
+      //width: 200%;
+    }
+    a {
+      left: 89%;
+      top: 31%;
+    }
+  }
+}
+
+@media (max-width: 320px){
+  .header_menublock {
+    padding: 0 0 0 20px;
+  }
+  .header_shape:before {
+    left: 215px;
+  }
+  .header_shape:after {
+    left: -48px;
+  }
+  .footer_subscribe {
+    input {
+      //width: 170%;
+    }
+    a {
+      left: 89%;
+      top: 30%;
+    }
+  }
+}
