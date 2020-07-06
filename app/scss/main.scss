@@ -569,6 +569,10 @@
   }
   a {
     color: white;
+    text-decoration: none;
+  }
+  a:hover {
+    font-weight: 600;
   }
 }
 
