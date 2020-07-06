@@ -6,7 +6,7 @@ $(function () {
             top = $(id).offset().top;
         $('body,html').animate({scrollTop: top}, 1000);
     });
-
+/*
     $('.count').each(function () {
         $(this).prop('Counter', 0).animate({
             Counters: $(this).text()
@@ -18,10 +18,25 @@ $(function () {
             }
         });
     });
-
+*/
     $('.header_burger').click(function (event) {
         $('.header_burger, #menu').toggleClass('active')
     })
+
+    $(window).scroll(function(event){
+        var st = $(this).scrollTop();
+        if (st > 3700){
+            $(this).prop('Counter', 0).animate({
+                Counters: $(this).text()
+            },{
+                duration: 2000,
+                easing: 'swing',
+                step: function (now) {
+                    $(this).text(Math.ceil(now));
+                }
+            });
+        }
+
 
 });
 
