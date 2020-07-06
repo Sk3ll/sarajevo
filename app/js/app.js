@@ -20,7 +20,7 @@ $(function () {
         var winScrollTop = $(this).scrollTop();
         if(winScrollTop > scrollToElem && check) {
             $('.count').each(function () {
-                $(this).prop('Counter', 0).animate({
+                $(this).prop('Counter', -1).animate({
                     Counters: $(this).text()
                 },{
                     duration: 2000,
