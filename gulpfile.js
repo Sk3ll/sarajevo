@@ -15,6 +15,8 @@ let paths = {
 			//вот сюда новые плагины
 			'app/js/jquery.hoverdir.js',
 			'app/js/modernizr.custom.97074.js',
+			'app/js/counterup.min.js',
+			'node_modules/waypoints/lib/jquery.waypoints.min.js',
 			baseDir + '/js/app.js' // app.js. Always at the end
 		],
 		dest: baseDir + '/js',
