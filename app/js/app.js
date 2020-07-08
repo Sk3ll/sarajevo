@@ -1,5 +1,5 @@
 $(function () {
-  //  $('.your-class').slick();
+    //$('.image-block').slick();
     $("#menu").on("click","a", function (event) {
         event.preventDefault();
         let id  = $(this).attr('href'),
@@ -33,8 +33,11 @@ $(function () {
         }
     });
 
-
+    $(' #da-thumbs > li ').each( function() { $(this).hoverdir(); } );
 
 });
+
+
+
 
 

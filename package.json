@@ -28,6 +28,7 @@
 	"dependencies": {
 		"@fortawesome/fontawesome-free": "^5.13.1",
 		"animate.css": "^4.1.0",
+		"hover-dir": "^1.0.1",
 		"slick-carousel": "^1.8.1",
 		"wow.js": "^1.2.2"
 	}

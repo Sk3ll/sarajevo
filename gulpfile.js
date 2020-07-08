@@ -13,7 +13,8 @@ let paths = {
 			'node_modules/jquery/dist/jquery.min.js', // npm vendor example (npm i --save-dev jquery)
 			'node_modules/slick-carousel/slick/slick.min.js',
 			//вот сюда новые плагины
-
+			'app/js/jquery.hoverdir.js',
+			'app/js/modernizr.custom.97074.js',
 			baseDir + '/js/app.js' // app.js. Always at the end
 		],
 		dest: baseDir + '/js',

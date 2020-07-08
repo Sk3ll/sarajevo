@@ -57,6 +57,9 @@
       top: 20%;
     }
   }
+  .da-thumbs {
+    height: 400px;
+  }
 }
 // ≥768px
 @include media-breakpoint-down(sm) {
