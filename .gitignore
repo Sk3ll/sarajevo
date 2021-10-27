@@ -1,0 +1,54 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+node_modules
+/.pnp
+.pnp.js
+
+# testing
+coverage
+reports
+.scannerwork
+scaredycat_sitenames.properties
+.nyc_output
+
+# production
+build
+dist
+target
+storybook-static
+
+# generated
+generated
+bin/
+
+# logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# IDE
+.vscode
+*.code-workspace
+.history
+
+*.iml
+.idea/
+
+.classpath
+.project
+.settings/
+target/
+
+*.swp
+
+# misc
+.DS_Store
+setenv.bat
+api-definitions/swagger.inc.yml
+
+/**/features.json
+!/features.json
